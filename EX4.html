@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercícios de JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body text="white" bgcolor="black">
+	<p>EX 4</p>
+
+	<script type="text/javascript">
+	
+	    var num1, num2, operador, result;
+		num1 = parseInt(window.prompt("Digite o 1º número:"));
+        operador = window.prompt("Digite o operador que deseja (+, -, * ou /):");
+        num2 = parseInt(window.prompt("Digite o 2º número:"));
+    
+        if (operador == "+") 
+        { 
+            result = num1 + num2
+            document.write("<p>Resultado do calculo = <font color='#1b4f8f'>" + result + "</p>")
+        }
+        else{
+        if (operador == "-") 
+        { 
+            result = num1 - num2
+            document.write("<p>Resultado do calculo = <font color='#1b4f8f'>" + result + "</p>")
+        }
+        else{
+        if (operador == "*") 
+        { 
+            result = num1 * num2
+            document.write("<p>Resultado do calculo = <font color='#1b4f8f'>" + result + "</p>")
+        }
+        else{
+        if (operador == "/") 
+        { 
+            result = num1 / num2
+            document.write("<p>Resultado do calculo = <font color='#1b4f8f'>" + result + "</p>")
+        }
+        else{
+        {
+            document.write("<font color='red'><p>Não é possível efetuar o cálculo<p>")
+        }
+        }
+        }
+        }
+        }
+
+	</script>
+</body>
+</html>

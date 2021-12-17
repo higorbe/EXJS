@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercícios de JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body text="white" bgcolor="black">
+	<p>EX 3</p>
+
+	<script type="text/javascript">
+	
+	    var salario, idade, par, impar;
+		salario = parseInt(window.prompt("Digite o Salário:"));
+        idade = parseInt(window.prompt("Digite a Idade:"));
+
+        document.write("<p>Salário Bruto = " + salario + "</p>")
+        document.write("<p>Idade = " + idade + "</p>")
+
+        if (idade % 2 == 0) 
+        { 
+            par = ((0.1*salario)+salario);
+            document.write("<p>Salário Líquido (com Acréscimo) = <font color='#00f000'>" + par + "</p>")
+        }
+        else
+        {
+            impar = (salario-(0.1*salario));
+            document.write("<p>Salário Líquido (com Desconto) = <font color='f40000'>" + impar + "</p>")
+        }
+
+	</script>
+</body>
+</html>

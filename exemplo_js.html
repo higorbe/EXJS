@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de JS</title>
+	<meta charset="utf-8">
+</head>
+<body text="white" bgcolor="black">
+	<p>aqui é um parágrafo</p>
+
+	<script type="text/javascript">
+		// comentário de linha
+
+		/*
+			comentário de bloco
+		*/
+
+		document.write("sou um parágrafo pelo JS");
+
+		//alert("Boa tarde. \nAula de JS");
+
+		document.write("<br>parágrafo 2");
+
+		document.write("<br>")
+
+		var nome, sobrenome;
+
+		nome = window.prompt("Digite seu nome:");
+
+		sobrenome = window.prompt("Digite seu sobrenome:");
+
+		document.write("<b><font color='pink'>", sobrenome + ", " + nome, "</font></br>")
+
+		var num1, num2, soma;
+
+		num1 = window.prompt("Digite o primeiro número:");
+		num1 = parseInt(num1);
+
+		num2 = parseInt(window.prompt("Digite o segundo número:"));
+
+		soma = num1 + num2;
+
+		document.write("<p>Soma = " + soma + "</p>");
+
+		var data = new Date();
+			document.write("Hoje é " + data.getDate() + " de " 
+				+ (1 + data.getMonth()) + " de " 
+				+ data.getFullYear() );
+	</script>
+</body>
+</html>
